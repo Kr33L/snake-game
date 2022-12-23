@@ -13,6 +13,10 @@ let snakeDirection = "right";
 let isGameOver = false;
 let score = 0;
 
+const snakeHead = document.createElement("div");
+snakeHead.classList.add("snake-unit");
+gameBoard.appendChild(snakeHead);
+
 function userInput(event) {
   if (event === "ArrowUp") snakeDirection = "up";
   if (event === "ArrowDown") snakeDirection = "down";
